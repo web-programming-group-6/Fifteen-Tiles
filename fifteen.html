@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @font-face {
+            font-family: 'Dosis';
+            src: url('Dosis-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body onload="startUpGame()" style="background-color: black; color: white; font-family: 'Dosis', sans-serif;">
+    <div id="wrapper">
+        <h1>Fifteen Puzzle</h1>
+        <p>
+            So, check it out – the Fifteen Puzzle is all about un-messing its fifteen squares. You gotta keep sliding those squares into the empty spot. How fast can you un-jumble this thing? Ready, set, solve! 🧩💨
+        </p>
+
+        <span id="win"></span>
+
+        <select id="characters" name="characters" title="Backgrounds" onchange="changeBackground()">
+            <option value="spider-man"id="spider-man">Spider-Man</option>
+            <option value="batman"id="batman">Batman</option>
+            <option value="joker"id="joker">Joker</option>
+            <option value="green-goblin"id="green-goblin">Green Goblin</option>
+			<option value="wolverine"id="wolverine">Wolverine</option>
+			<option value="venom"id="venom">Venom</option>
+        </select>
+
+        <div id="main">
+            <div id="tile-one"      class="tile">1</div>
+            <div id="tile-two"      class="tile">2</div>
+            <div id="tile-three"    class="tile">3</div>
+            <div id="tile-four"     class="tile">4</div>
+            <div id="tile-five"     class="tile">5</div>
+            <div id="tile-six"      class="tile">6</div>
+            <div id="tile-seven"    class="tile">7</div>
+            <div id="tile-eight"    class="tile">8</div>
+            <div id="tile-nine"     class="tile">9</div>
+            <div id="tile-ten"      class="tile">10</div>
+            <div id="tile-eleven"   class="tile">11</div>
+            <div id="tile-twelve"   class="tile">12</div>
+            <div id="tile-thirteen" class="tile">13</div>
+            <div id="tile-fourteen" class="tile">14</div>
+            <div id="tile-fifteen"  class="tile">15</div>
+            <div id="tile-sixteen"  class="tile"></div>
+        </div>
+
+        <button onclick="shuffleBoard()">Shuffle</button>
+
+        <p>
+            <b>Did you know?</b> There are more than 20,000,000,000,000 possible different arrangements that the pieces (including the blank space) can assume.
+
+        <p>
+            <a href="http://www.jslint.com/" target="_blank"><img src="jslint.gif" alt="JSLint"/> </a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img src="w3c-css.png" alt="W3C CSS" /> </a>
+            <a href="https://validator.w3.org/" target="_blank"><img src="w3c-xhtml.png" alt="W3C XHTML" /> </a>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="fifteen.js"></script>
+	<audio id="clickSound" src="click.mp3"></audio>
+</body>
+</html>
