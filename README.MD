@@ -4,7 +4,7 @@ The Sliding Puzzle is a simple classic game consisting of a 4x4 grid of numbered
 The object of the game is to arrange the tiles into numerical order by repeatedly sliding a square that neighbors
 the missing square into its empty space.
 
-![Demo 1](https://codd.cs.gsu.edu/~zansar1//Projects/Project3/fifteen.html)
+[Demo 1]:https://codd.cs.gsu.edu/~zansar1//Projects/Project3/fifteen.html
 
 Four Features Implemented:
 - End-of-game notification - Can be seen in fifteen.js in checkIfWon() function (line 252)
